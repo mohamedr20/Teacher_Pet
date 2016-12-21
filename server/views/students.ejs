@@ -1,0 +1,40 @@
+
+<%include partials/normalheader%>
+<div class="container">
+    <header class="jumbotron">
+        <div class="container">
+            <h1>Welcome To Teacher's App</h1>
+            <p>View our hand-picked campgrounds from all over the world</p>
+            <p>
+                <a class="btn btn-primary btn-large" href="/students/new">Add New Campground</a>
+            </p>
+        </div>
+    </header>
+    <table class="table col-md-4">
+        <thead class="thead-inverse">
+        <tr>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Math Level</th>
+            <th>English Level</th>
+        </tr>
+        </thead>
+        <tbody>
+        <% students.forEach(function(student){%>
+        <tr>
+        <td><%=student.firstname %></td>
+        <td><%=student.lastname %></td>
+        <td><%=student.math_level %></td>
+        <td><%=student.english_level %></td>
+        </tr>
+        <%console.log(student)%>
+        <%})%>
+
+        </tbody>
+    </table>
+
+    <button class="btn btn-warning">Edit</button>
+    <button class="btn btn-danger">Delete</button>
+    <button class="btn btn-success">Submit</button>
+</div>
+<%include partials/footer%>
