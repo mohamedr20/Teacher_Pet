@@ -28,7 +28,7 @@ npm install
         package.json
     readme.md
 ```
-##Prequesites
+##Perquisites
 You will need to have mongodb installed on your system in order to use mongoose
 If you don't visit: https://docs.mongodb.com/manual/administration/install-community/
 Follow the instructions here and you should be good to go.
@@ -51,8 +51,8 @@ Go to localhost:3000 after you run the command
 Unit testing is coming with v2
 
 ##Built with
-*[Express](http://expressjs.com/) --Lightweight Javascript Web Framework
-*[Node](https://nodejs.org/en/docs/) -- Powerful Event-driven I/O server-side JavaScript environment based on V8
+*[Express](http://expressjs.com/) --Lightweight Javascript Web Framework*
+*[Node](https://nodejs.org/en/docs/) -- Powerful Event-driven I/O server-side JavaScript environment based on V8 Engine*
 
 ##Versioning
 This is the first version of the app
@@ -64,5 +64,5 @@ This is the first version of the app
 This project is licensed under the MIT License
 
 ##Acknowledgments
-*Mostafa Baiou --first mentor(sensei)
-*Colt Steele -- helped me improved my skills greatly
+*Mostafa Baiou --first mentor(sensei)*
+*Colt Steele -- helped me improved my skills greatly*
