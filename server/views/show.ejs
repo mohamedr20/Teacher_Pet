@@ -1,0 +1,7 @@
+<h1><%=student.firstname %></h1>
+<h1><%=student.lastname %></h1>
+<h1><%=student.math_level %></h1>
+<h1><%=student.english_level %></h1>
+<form id="delete-form" action="/students/<%= student.id %>?_method=DELETE" method="POST">
+    <button class="btn btn-xs btn-danger">Delete</button>
+</form>

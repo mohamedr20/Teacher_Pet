@@ -1,9 +1,10 @@
 #Teachers Pet Application
 
-This is a node.js application that illustrates my take on the MEAN stack. Throughout this app I will adding
-new features and trying to build upon what I have built. This a scheduling application that will have the
-ability to create a student, delete a student, edit a student's information and read a table of students.These
-students will be sorted based on their math and english levels.
+This is a node.js application that illustrates my take on the MEAN stack.
+
+Throughout this app I will adding new features and trying to build upon what I have built.
+
+
 
 ##Getting Started
 ```
@@ -30,11 +31,14 @@ npm install
 ```
 ##Prerequisites
 You will need to have mongodb installed on your system in order to use mongoose
+
 If you don't visit: https://docs.mongodb.com/manual/administration/install-community/
+
 Follow the instructions here and you should be good to go.
 
 ##Installing
 Our development environment will be run on the local server
+
 This piece of code in our app.js starts up the server
 ```
 app.listen(3000, function(){
@@ -52,6 +56,7 @@ Unit testing is coming with v2
 
 ##Built with
 *[Express](http://expressjs.com/) --Lightweight Javascript Web Framework*
+
 *[Node](https://nodejs.org/en/docs/) -- Powerful Event-driven I/O server-side JavaScript environment based on V8 Engine*
 
 ##Version

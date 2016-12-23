@@ -1,16 +1,27 @@
 /**
  * Created by mohamedisse on 12/19/16.
  */
-var express     = require("express"),
-    app         = express(),
-    bodyParser  = require("body-parser"),
-    mongoose    = require("mongoose");
+var express     = require("express");
+var app         = express();
+var path        = require('path');
+var mongoose    = require("mongoose");
+//var Student     = ('./models/students.js');
+var User        = ('./models/user.js');
+var passport    = require('passport');
+var LocalStrategy = require('passport-local');
+var bodyParser  = require("body-parser");
+
+
 
 mongoose.connect('mongodb://localhost:27017/teacherapp');
+app.set('views', path.join(__dirname, 'views'));
 app.use(bodyParser.urlencoded({extended: true}));
 app.set("view engine", "ejs");
 
 // SCHEMA SETUP
+
+// SCHEMA SETUP
+
 var studentSchema = new mongoose.Schema({
     firstname: String,
     lastname: String,
@@ -19,7 +30,6 @@ var studentSchema = new mongoose.Schema({
 });
 
 var Student = mongoose.model("Student", studentSchema);
-/////////
 
 ////Routes
 //Home Page
@@ -64,7 +74,7 @@ app.get("/students/new", function(req, res){
 });
 
 // SHOW - shows more info about one campground
-app.get("/student/:id", function(req, res){
+app.get("/students/:id", function(req, res){
     //find the campground with provided ID
     Student.findById(req.params.id, function(err, foundStudent){
         if(err){
@@ -74,6 +84,18 @@ app.get("/student/:id", function(req, res){
             res.render("show", {student: foundStudent});
         }
     });
+});
+
+//Delete -- delete a student from the table
+app.delete("/students/:id",function(req,res){
+    Student.findByIdAndRemove(req.params.id,function(err){
+        if(err){
+            res.redirect("/students");
+        }
+        else{
+            res.redirect("/students")
+        }
+    })
 });
 
 // catch 404 and forward to error handler
