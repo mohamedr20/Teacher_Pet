@@ -1,8 +1,7 @@
 #Teachers Pet Application
 
-This is a node.js application that illustrates my take on the MEAN stack.
-
-Throughout this app I will adding new features and trying to build upon what I have built.
+This is a Node.js/Express application that illustrates my take on the MEAN stack.
+Throughout this app I will implementing new features and testing out ways I can learn about full-stack development.
 
 
 
@@ -69,5 +68,5 @@ This is the first version of the app
 This project is licensed under the MIT License
 
 ##Acknowledgments
-*Mostafa Baiou --first mentor(sensei)*
-*Colt Steele -- helped me improved my skills greatly*
+*Mostafa Baiou --first mentor*
+*Colt Steele -- Taught me about full-stack developement using Node.JS & Express*
